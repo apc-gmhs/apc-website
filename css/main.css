@@ -1,7 +1,7 @@
 header {
 	width: 100%;
-	background-color: white;
-	height: 100px;
+	background-color: rgb(46, 46, 46, 0.95);;
+	height: 90px;
 }
 
 nav {
@@ -23,11 +23,12 @@ nav {
 	border-radius: 3px;
 	margin-right: 10px;
 	font-size: 1rem;
-	color: black;
+	color: white;
 }
 
 .nav-item:hover {
-	background-color: rgb(196, 196, 196);
+	background-color: rgb(100, 149, 104)
+	;
 }
 
 .nav-item:hover .nav-dropdown {
@@ -38,7 +39,7 @@ nav {
 .nav-dropdown {
 	display: none;
 	position: absolute;
-	background-color: rgb(196, 196, 196);
+	background-color: rgb(156, 204, 156);
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	padding-inline-start: 0px;
 	text-align: center;
