@@ -1,5 +1,3 @@
-# GMHS Give Day Club
+# Advanced Programming Club Website
 
-> Website for the George Mason High School Club "Give Day"
-
-## Our mission is to help those in less fortunate conditions than ourselves.
+If you would like to view the website during developement, see instructions to download and use Jekyll here: https://jekyllrb.com/docs/installation/
