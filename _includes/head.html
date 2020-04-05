@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="theme-color" content="#d12727">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ page.image }}">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    {% if page.stylesheets %}
+        {% for stylesheet in page.stylesheets %}
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css">
+        {% endfor %}
+    {% endif %}
+    {% if page.scripts %}
+        {% for script in page.scripts %}
+            <script src="{{ site.baseurl }}/scripts/{{ script }}.js"></script>
+        {% endfor %}
+    {% endif %}
+</head>
