@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	background-color: rgb(46, 46, 46, 0.95);;
+	background-color: rgb(46, 46, 46, 0.95);
 	height: 90px;
 }
 
@@ -27,8 +27,7 @@ nav {
 }
 
 .nav-item:hover {
-	background-color: rgb(100, 149, 104)
-	;
+	background-color: rgb(100, 149, 104);
 }
 
 .nav-item:hover .nav-dropdown {
@@ -70,14 +69,9 @@ nav {
 	border-radius: 3px;
 }
 
-footer {
-	background-color: white;
-	height: 75px;
-	line-height: 75px;
-}
-
 .footer {
 	display: inline-block;
+	position: fixed;
 	font-size: 10px;
 	left: 0;
 	line-height: 30px;
@@ -92,6 +86,9 @@ footer {
 
 .footer > * {
 	margin: 0px;
+}
+.footer a {
+	text-decoration: none;
 }
 
 @keyframes nav-dropdown-fade {
