@@ -5,7 +5,7 @@ If you would like to view the websiring developement, see instructions to downlo
 
 # TO_DO 
 
--Make curriculum page functional and embed curriculum document
+-Beautify curriculum page
 
 -Beautify the about us page and fill in the actual information about the people listed
 
