@@ -16,4 +16,4 @@ If you would like to view the websiring developement, see instructions to downlo
 
 -Fix curriculum page
 
--Set up HTTPS
+-Set up login cause the website is shit rn
