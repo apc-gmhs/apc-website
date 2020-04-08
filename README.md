@@ -4,9 +4,10 @@ If you would like to view the websiring developement, see instructions to downlo
 
 
 # TO_DO 
-
--Beautify curriculum page
-
+-Fix color of nav bar on main page
+-Change hover color on nav bar
+-Remove white space surronding matrix backround image
+-Remove button from APC logo
 -Beautify the about us page and fill in the actual information about the people listed
-
--Feature projects (can-you-hear-me would good imo)
+-Fix curriculum page
+-Set up HTTPS
