@@ -38,6 +38,7 @@ p.label {
 	font-family: Adam;
 	font-size: 15px;
 	text-align: center;
+	border-radius: 10px;
 }
 
 #button-wrapper {

@@ -4,114 +4,40 @@ title: Home
 description: The Home page for the APC at George Mason High School
 permalink: /about_us
 stylesheets:
-- about_us
+  - about_us
 ---
+
 <main>
-    <h1>Our Members</h1>
-  <div id="exec-board" class="card-grid">
-      <div>
-          <img src="/assets/images/head.jpg">
-          <p class="label">Head Curriculum Coordinator/Co-Founder</p>
-          <h5>Jonathan Oppenheimer</h5>
-          <p>big jonny is the curriculum coordinator he knows his shit</p>
-      </div>
-      <div class="card-elevated">
-        <img src="/assets/images/head.jpg">
-        <p class="label">President/Founder</p>
-        <h5>Rohan Suri</h5>
-        <p>founder, president, king, etc... of the apc. APC RISE UP. </p>
-      </div>
-      <div>
-          <img src="/assets/images/head.jpg">
-          <p class="label">Vice President/Co-Founder</p>
-          <h5>Andrew Lester</h5>
-          <p>big man andrew is the g0d c0d3r of the APC, he is fluent in every language except for french</p>
-      </div>
-  </div>
-  <div class="card-grid">
-    <div>
-      <img src="/assets/images/hmm.png">
-      <p class="label">example</p>
-      <h5>teehee</h5>
-      <p>placeholder woop woop</p>
-  </div>
-  <div>
-    <img src="/assets/images/hmm.png">
-    <p class="label">example</p>
-    <h5>teehee</h5>
-    <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-<div>
-  <img src="/assets/images/hmm.png">
-  <p class="label">example</p>
-  <h5>teehee</h5>
-  <p>placeholder woop woop</p>
-</div>
-  </div>
+	<h1>Our Members</h1>
+	<div id="exec-board" class="card-grid">
+		<div>
+			<img src="/assets/images/head.jpg" />
+			<p class="label">Head Curriculum Coordinator/Co-Founder</p>
+			<h5>Jonathan Oppenheimer</h5>
+			<p>big jonny is the curriculum coordinator he knows his shit</p>
+		</div>
+		<div class="card-elevated">
+			<img src="/assets/images/head.jpg" />
+			<p class="label">President/Founder</p>
+			<h5>Rohan Suri</h5>
+			<p>founder, president, king, etc... of the apc. APC RISE UP.</p>
+		</div>
+		<div>
+			<img src="/assets/images/head.jpg" />
+			<p class="label">Vice President/Co-Founder</p>
+			<h5>Andrew Lester</h5>
+			<p>big man andrew is the g0d c0d3r of the APC, he is fluent in every language except for french</p>
+		</div>
+	</div>
+	<script src="/scripts/about_us.js" defer></script>
+	<div class="card-grid">
+		{% for card in site.data.members.members %}
+		<div>
+			<img src="{{ card.imagepath }}" />
+			<p class="label">{{ card.label }}</p>
+			<h5>{{ card.name }}</h5>
+			<p>{{ card.desc }}</p>
+		</div>
+		{% endfor %}
+	</div>
 </main>
