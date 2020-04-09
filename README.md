@@ -2,18 +2,10 @@
 
 If you would like to view the websiring developement, see instructions to download and use Jekyll here: https://jekyllrb.com/docs/installation/
 
+Want to help us develop this website? Shoot any of the contributors and email, schoology message, text, or AOL Plus Live™ DM. 
+We'd love your help running and maintaining this bad boy. We're also happy to answer any questions you may have about the website. 
 
-# TO_DO 
--Fix color of nav bar on main page
 
--Change hover color on nav bar
+Registry Server URL: https://rdap.verisign.com/com/v1/domain/apc-gm.com
 
--Remove white space surronding matrix backround image
-
--Remove button from APC logo
-
--Beautify the about us page and fill in the actual information about the people listed
-
--Fix curriculum page
-
--Set up login cause the website is shit rn
+Registrar Server URL: https://namerdap.systems/domain/APC-GM.COM
