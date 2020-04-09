@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: The Home page for the APC at George Mason High School
+description: A page showcasing every member in the APC
 permalink: /about_us
 stylesheets:
   - about_us
@@ -11,24 +11,27 @@ stylesheets:
 	<h1>Our Members</h1>
 	<div id="exec-board" class="card-grid">
 		<div>
-			<img src="/assets/images/head.jpg" />
+			<img src="/assets/images/pfp/jonathanoppenheimer.jpg" />
 			<p class="label">Head Curriculum Coordinator/Co-Founder</p>
 			<h5>Jonathan Oppenheimer</h5>
 			<p>big jonny is the curriculum coordinator he knows his shit</p>
 		</div>
 		<div class="card-elevated">
-			<img src="/assets/images/head.jpg" />
+      <img src="/assets/images/pfp/rohansuri.jpg" />
 			<p class="label">President/Founder</p>
 			<h5>Rohan Suri</h5>
 			<p>founder, president, king, etc... of the apc. APC RISE UP.</p>
 		</div>
+
 		<div>
-			<img src="/assets/images/head.jpg" />
+			<img src="/assets/images/pfp/default_pfp.png" />
 			<p class="label">Vice President/Co-Founder</p>
 			<h5>Andrew Lester</h5>
 			<p>big man andrew is the g0d c0d3r of the APC, he is fluent in every language except for french</p>
 		</div>
 	</div>
+
+	
 	<script src="/scripts/about_us.js" defer></script>
 	<div class="card-grid">
 		{% for card in site.data.members.members %}
@@ -40,4 +43,5 @@ stylesheets:
 		</div>
 		{% endfor %}
 	</div>
+	<br />
 </main>

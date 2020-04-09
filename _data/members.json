@@ -1,58 +1,53 @@
 {
 	"members": [
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Social Media Coordinator",
+			"name": "Ella Reithinger",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Secretary",
+			"name": "Sean Young",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Contributor",
+			"name": "Danny Oppenheimer",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Early Supporter",
+			"name": "Sam Klemic",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Early Supporter",
+			"name": "Abby Quade",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Early Supporter",
+			"name": "Anuragi Thapliya",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Early Supporter",
+			"name": "Peter Villa",
+			"desc": "Description"
 		},
 		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
-		},
-		{
-			"imagepath": "/assets/images/hmm.png",
-			"label": "example",
-			"name": "teehee",
-			"desc": "placeholder woop woop"
+			"imagepath": "/assets/images/pfp/default_pfp.png",
+			"label": "Early Supporter",
+			"name": "Sequoia Wyckoff",
+			"desc": "Description"
 		}
 	]
 }
+
