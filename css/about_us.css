@@ -64,13 +64,14 @@ h4 {
 	will-change: transform;
 }
 
-.card-grid > div:hover, .card-elevated {
+.card-grid > div:hover {
 	transform: translateY(-15px);
 	box-shadow: -8px 8px 16px 4px rgba(0, 0, 255, 0.35);
 }
 
 .card-elevated {
 	transform: translateY(-23px);
+	box-shadow: -8px 8px 16px 4px rgba(0, 0, 255, 0.35);
 }
 
 @media (max-width: 390px) {
