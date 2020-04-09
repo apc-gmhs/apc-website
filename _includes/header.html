@@ -1,54 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{{ site.baseurl }}">
-		<img src= {{ '/assets/images/favicon.png' | relative_url }} class="d-inline-block align-top width="30" height="30" alt="">
-    APC
-	</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}curriculum.html">Curriculum</a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}about_us.html">About Us</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Featured Projects
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://github.com/apc-gmhs/can-you-hear-me">can-you-hear-me</a>
-          <a class="dropdown-item" href="https://github.com/apc-gmhs/twitter-app">Twitter API</a>
-          <a class="dropdown-item" href="https://github.com/apc-gmhs/apc-website">APC Website</a>
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          External Websites
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://fccps.schoology.com/group/2428165656">Schoology Group</a>
-          <a class="dropdown-item" href="https://www.masonathletics.org/page/5389">Mason Athletics Club Page</a>
-          <a class="dropdown-item" href="https://gm.fccps.org/">GMHS Website</a>
-        </div>
-      </li>
-
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-
-  </div>
-</nav>
+<header>
+	<img />
+	<nav>
+		<a class="nav-item link" href="/">Home</a>
+		<a class="nav-item link" href="/curriculum">Curriculum</a>
+		<a class="nav-item link" href="/about_us">About Us</a>
+		<span class="nav-item">
+			Featured Projects
+			<ul class="nav-dropdown">
+        <li><a class="dropdown-item" href="https://github.com/apc-gmhs/can-you-hear-me">can-you-hear-me</a></li>
+        <li><a class="dropdown-item" href="https://github.com/apc-gmhs/twitter-app">Twitter API</a></li>
+        <li><a class="dropdown-item" href="https://github.com/apc-gmhs/apc-website">APC Website</a></li>
+			</ul>
+		</span>
+		<span class="nav-item">
+			External Websites
+			<ul class="nav-dropdown">
+				<li><a href="https://fccps.schoology.com/group/2428165656" target="_blank">School Group</a></li>
+				<li><a href="https://www.masonathletics.org/page/5389" target="_blank">Mason Athletics Club Page</a></li>
+				<li><a href="https://gm.fccps.org/" target="_blank">GMHS Website</a></li>
+			</ul>
+		</span>
+	</nav>
+</header>
