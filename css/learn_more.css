@@ -1,4 +1,3 @@
-/* Split the screen in half */
 .split {
     height: 100%;
     width: 50%;
@@ -12,14 +11,33 @@
 .left {
     left: 0;
     background-color: #add8e6;
+    color: black;
+    transition: width 0.25s ease;
 }
   
 .right {
     right: 0;
     background-color: coral;
+    color: black;
+    transition: width 0.25s ease;
 }
-  
-  /* If you want the content centered horizontally and vertically */
+
+.right:hover {
+   width: 60%;
+}
+
+.right:hover ~ .left {
+    width: 40%;
+}
+
+.left:hover + .right {
+    width: 40%;
+}
+
+.left:hover {
+    width: 60%;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -28,9 +46,12 @@
     text-align: center;
 }
   
-  /* Style the image inside the centered container, if needed */
 .centered img {
     width: 20vh;
     height: 20vh;
     border-radius: 12vh;
+}
+
+.no_wrap {
+    width: 20vw;
 }

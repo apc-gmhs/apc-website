@@ -1,0 +1,2 @@
+python3 get_members.py
+python3 update_descriptions.py

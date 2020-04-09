@@ -100,6 +100,9 @@ nav {
 .footer a {
 	text-decoration: none;
 }
+.footer a {
+	color: white
+}
 
 @keyframes nav-dropdown-fade {
 	from {
