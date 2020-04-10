@@ -1,0 +1,31 @@
+#title {
+	text-align: center;
+}
+
+#high_lvl {
+	width: 100%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+
+	background-color: #c182d1;
+}
+
+h3 {
+	text-align: center;
+	font-weight: 900;
+}
+
+.language {
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+}
+
+.language img {
+	width: 1.2em;
+	height: 1.2em;
+}
+
+.languages {
+	margin-left: 1vw;
+}
