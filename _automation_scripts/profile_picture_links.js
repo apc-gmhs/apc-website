@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 /* use google api to get usernames from spreadsheet and fill array */
-let usernames = ['jonathanoppenheimer'];
+let usernames = [''];
 let urls = {
 	instagram_urls: [],
 };
