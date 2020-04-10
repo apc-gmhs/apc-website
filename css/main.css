@@ -101,7 +101,11 @@ nav {
 	text-decoration: none;
 }
 .footer a {
-	color: white
+	color: white;
+}
+.footer img {
+	width: 0.6vw;
+	width: 0.6vw;
 }
 
 @keyframes nav-dropdown-fade {
