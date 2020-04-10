@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const fs = require('fs');
 
 /* use google api to get usernames from spreadsheet and fill array */
-let usernames = ['jonathanoppenheimer','jonathanoppenheimer','jonathanoppenheimer'];
+let usernames = [''];
 let urls = {
     instagram_urls: [] 
 };
@@ -18,7 +18,7 @@ for (let i of usernames) {
 
                 urls.instagram_urls.push({[i]: pic_url}); 
                 var json = JSON.stringify(urls)
-                fs.writeFileSync("instagram_urls.json", json, 'utf8', null, 4); 
+                fs.writeFileSync("_data/" + "instagram_urls.json", json, 'utf8', null, 4); 
             }
         })
 }
