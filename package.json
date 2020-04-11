@@ -1,0 +1,24 @@
+{
+	"name": "apc-website",
+	"version": "1.0.0",
+	"description": "Repo for the apc website at GMHS",
+	"main": "_automation_scripts/profile_picture_links.js",
+	"dependencies": {
+		"google-spreadsheet": "^2.0.7",
+		"node-fetch": "^2.6.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/apc-gmhs/apc-website.git"
+	},
+	"author": "Rohan, Andrew, Jonathan, Danny",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/apc-gmhs/apc-website/issues"
+	},
+	"homepage": "https://github.com/apc-gmhs/apc-website#readme"
+}

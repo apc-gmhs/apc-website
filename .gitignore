@@ -4,4 +4,6 @@ _site
 .jekyll-metadata
 vendor
 .vs
+node_modules
 _automation_scripts/keys.yml
+_automation_scripts/google_secret.json
