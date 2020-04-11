@@ -1,0 +1,41 @@
+name: Generate Members
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Download Schoology Group Members
+      shell: bash
+      run: 'python _automation_scripts/get_members.py'
+      env:
+        SCHOOLOGY_PUBLIC_KEY: ${{ secrets.SCHOOLOGY_PUBLIC_KEY }}
+        SCHOOLOGY_PRIVATE_KEY: ${{ secrets.SCHOOLOGY_PRIVATE_KEY }}
+    - name: Sort users and apply specific data
+      shell: bash
+      run: 'node _automation_scripts/form_submitted_customizer.js'
+      env:
+        GOOGLE_DRIVE_JSON: ${{ secrets.GOOGLE_DRIVE_JSON }}
+    - name: Commit Files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "CI: Automatically generated member data"
+    - name: Push Changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
