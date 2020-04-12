@@ -1,10 +1,17 @@
 import schoolopy
 import yaml
 import json
+import os
+import sys
+from pathlib import Path
 
-# Load schoology api keys from file
-with open('keys.yml') as file:
-    keys = yaml.load(file, Loader=yaml.FullLoader)
+# Load schoology api keys from environment variables
+keys = {
+    'public': os.environ.get('SCHOOLOGY_PUBLIC_KEY'),
+    'secret': os.environ.get('SCHOOLOGY_PRIVATE_KEY')
+}
+
+members_file_path = Path(os.path.dirname(os.path.realpath(__file__))) / '../_data/members.json'
 
 sc = schoolopy.Schoology(schoolopy.Auth(keys['public'], keys['secret']))
 
@@ -42,19 +49,24 @@ def get_paged_data(
 
     return data
 
-with open('_data/members.json') as file:
-    blocked_names = [member['name'] for member in json.load(file)['members']]
+with open(members_file_path) as file:
+    old_members = json.load(file)['members']
 
 members = get_paged_data(schoology_req, 'https://api.schoology.com/v1/groups/2428165656/enrollments', 'enrollment')
+json_data = {
+    'members': old_members
+}
+old_member_names = [member['name'] for member in old_members]
 for member in members:
-    if member['name_display'] in blocked_names or member['admin'] == 1:
+    if member['name_display'] in old_member_names or member['admin'] == 1:
         continue
-    print(f"""{{
-			    "imagepath": "/assets/images/pfp/default_pfp.png",
-			    "label": "Member",
-			    "name": "{member['name_display']}",
-			    "desc": "Description"
-            }}""" + ('' if member == members[-1] else ','))
 
-# to run command
-# py -3 get_members.py
+    json_data['members'].append({
+        'imagepath': '/assets/images/pfp/default_pfp.png',
+        'label': 'Member',
+        'name': f"{member['name_display']}",
+        'desc': 'Description'
+    })
+
+with open(members_file_path, 'w') as file:
+    json.dump(json_data, file)
