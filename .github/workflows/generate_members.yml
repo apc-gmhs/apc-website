@@ -2,7 +2,7 @@ name: Generate Members
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 4 * * *'
 
 jobs:
   generate:
@@ -34,6 +34,7 @@ jobs:
       run: 'node _automation_scripts/form_submitted_customizer.js'
       env:
         GOOGLE_DRIVE_JSON: ${{ secrets.GOOGLE_DRIVE_JSON }}
+        MEMBERS_SPREADSHEET_KEY: ${{ secrets.MEMBERS_SPREADSHEET_KEY }}
     - name: Commit Files
       run: |
         git config --local user.email "action@github.com"
