@@ -15,14 +15,14 @@ jobs:
       with:
         python-version: '3.x'
         architecture: 'x64'
-    - name: Install Dependencies
-      run: |
-        'pip install -r ${{ github.workspace }}/_automation_scripts/requirements.txt'
-        'npm install'
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Install Dependencies
+      run: |
+        'pip install -r ${{ github.workspace }}/_automation_scripts/requirements.txt'
+        'npm install'
     - name: Download Schoology Group Members
       shell: bash
       run: 'python ${{ github.workspace }}/_automation_scripts/get_members.py'
