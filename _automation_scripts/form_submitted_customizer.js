@@ -51,9 +51,10 @@ async function find(username, name) {
 		.then((body) => {
 			if (body.includes('<img class="picture" src="')) {
 				// remove everything after the html tag for the pfp
-				let temp_pos = body.split('<img class="picture" src="').pop();
 				// only keep everything before the closing quote
-				pic_url = temp_pos.substring(0, temp_pos.indexOf('"'));
+				// REGEX will look for anything inbetween class="picture" src=" and "> to find string
+				//                    everything in between here   ⌄
+				pic_url = body.match(/(?<=class\="picture" src\=").*?(?=">)/gm)[0];
 			}
 		});
 	}
