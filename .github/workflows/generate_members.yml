@@ -21,6 +21,7 @@ jobs:
         node-version: '10.x'
     - name: Install Dependencies
       run: |
+        python -m pip install --upgrade pip
         'pip install -r _automation_scripts/requirements.txt'
         'npm install'
     - name: Download Schoology Group Members
