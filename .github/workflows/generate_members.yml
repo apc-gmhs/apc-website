@@ -21,17 +21,17 @@ jobs:
         node-version: '10.x'
     - name: Install Dependencies
       run: |
-        'pip install -r ${{ github.workspace }}/_automation_scripts/requirements.txt'
+        'pip install -r _automation_scripts/requirements.txt'
         'npm install'
     - name: Download Schoology Group Members
       shell: bash
-      run: 'python ${{ github.workspace }}/_automation_scripts/get_members.py'
+      run: 'python _automation_scripts/get_members.py'
       env:
         SCHOOLOGY_PUBLIC_KEY: ${{ secrets.SCHOOLOGY_PUBLIC_KEY }}
         SCHOOLOGY_PRIVATE_KEY: ${{ secrets.SCHOOLOGY_PRIVATE_KEY }}
     - name: Sort users and apply specific data
       shell: bash
-      run: 'node ${{ github.workspace }}/_automation_scripts/form_submitted_customizer.js'
+      run: 'node _automation_scripts/form_submitted_customizer.js'
       env:
         GOOGLE_DRIVE_JSON: ${{ secrets.GOOGLE_DRIVE_JSON }}
         MEMBERS_SPREADSHEET_KEY: ${{ secrets.MEMBERS_SPREADSHEET_KEY }}
