@@ -22,7 +22,11 @@ async function fill() {
 		let url = await find(row.ifyestotheabovequestionwhatisyourinstagramtag, row.whatisyourname);
 		let member = members.members.find(elem => elem['name'] == row.whatisyourname);
 
-		if (member && url) {
+                if (!url) {
+                    url = '/assets/images/pfp/default_pfp.png';
+                }
+
+		if (member) {
 			member.imagepath = url;
 			member.label = row.role;
 			member.desc = row.whatwouldyoulikeyourbiotobe35wordsorless;
