@@ -36,7 +36,7 @@ async function fill() {
 
 async function find(username, name) {
 	let pic_url;
-	if(username == '[USE_HARDCOPY]]')
+	if(username == '[USE_HARDCOPY]')
 	{
 		pic_url = `/assets/images/pfp/${name.replace(' ', '_')}.jpg`; 
 	}
