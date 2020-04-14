@@ -21,6 +21,7 @@ jobs:
         node-version: '10.x'
     - name: Install Dependencies
       run: |
+        ls _automation_scripts
         python -m pip install --upgrade pip
         'python -m pip install -r _automation_scripts/requirements.txt'
         'npm install'
