@@ -19,7 +19,7 @@ async function fill() {
 	});
 
 	for (let row of data) {
-		let url = await find(row.ifyestotheabovequestionwhatisyourinstagramtag);
+		let url = await find(row.ifyestotheabovequestionwhatisyourinstagramtag, row.whatisyourname);
 		let member = members.members.find(elem => elem['name'] == row.whatisyourname);
 
 		if (member) {
@@ -30,9 +30,19 @@ async function fill() {
 	}
 }
 
-async function find(username) {
+async function find(username, name) {
 	let pic_url;
-	await fetch('https://www.instadp.com/fullsize/' + username)
+	if(username == '[USE_HARDCOPY]]')
+	{
+		pic_url = `/assets/images/pfp/${name.replace(' ', '_')}.jpg`; 
+	}
+	else if(username == '[HAMSTER]')
+	{
+		pic_url = '/assets/images/pfp/hamster.jpg';
+	}
+	else
+	{
+		await fetch('https://www.instadp.com/fullsize/' + username)
 		.then((res) => res.text())
 		.then((body) => {
 			if (body.includes('<img class="picture" src="')) {
@@ -42,6 +52,8 @@ async function find(username) {
 				pic_url = temp_pos.substring(0, temp_pos.indexOf('"'));
 			}
 		});
+	}
+	
 	return pic_url;
 }
 
