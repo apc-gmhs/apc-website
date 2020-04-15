@@ -13,13 +13,13 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/76938864_2563035387249308_1144268116168015872_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=u6pBQsEN9nwAX9g3b_5&oh=f32247ab9f2eb46fa33d9f109f83ba3d&oe=5EC011E8",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/76938864_2563035387249308_1144268116168015872_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=u6pBQsEN9nwAX_vjvBu&oh=ff0dfcf2cefb8cd45ff5d61ba39efd55&oe=5EC011E8",
             "label": "Member",
             "name": "Danny Oppenheimer",
             "desc": "Freshmen boi who worked on the APC website and is basically hackerman himself."
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Early Supporter",
             "name": "Sam Klemic",
             "desc": "Sam"
@@ -115,13 +115,13 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Joseph Dakin",
             "desc": "Member of the advanced program club. Programming and Physics are my forté"
         },
         {
-            "imagepath": "",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92028572_2363068673992878_5958965625085755392_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=EvL-3mMhGQIAX9Xynbr&oh=fa977beed82957e4488179edca5985e8&oe=5EC085B3",
             "label": "Member",
             "name": "Rachel Danckaert",
             "desc": "Hello, I’m a senior at GMHS. I am going to be attending Virginia Tech next year, so this will unfortunately my only year in this club. I hope to achieve great things with my prior knowledge of programming."
@@ -157,7 +157,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=PZkbFM-S0h8AX_2aC_3&oh=2d84b8747f8a16fc4f93cf884778d955&oe=5EC0C645",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=PZkbFM-S0h8AX-61gbw&oh=b58466870e0dd28e9568b4a673357697&oe=5EC0C645",
             "label": "Member",
             "name": "Wynona Finein",
             "desc": "sup don't know why im here but i'm here so might as well have fun with it "
@@ -211,7 +211,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=ScCpiqBnfQcAX873r8L&oh=6a0023e7a0982c2b535ffbf00f2fa1ad&oe=5EC0B2E5",
             "label": "Member",
             "name": "Ryan Green",
             "desc": "Freshman who is very bad at coding and gets carried through computer problems by his friends who are massive nerds"
@@ -255,7 +255,8 @@
         {
             "label": "Contributer",
             "name": "Evan Hom",
-            "desc": "Hi. My name is Evan and I love to play football and basketball. I also really like to make stuff and program."
+            "desc": "Hi. My name is Evan and I love to play football and basketball. I also really like to make stuff and program.",
+            "imagepath": "/assets/images/pfp/Evan_Hom.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -342,7 +343,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/70956040_390984834902819_7625913059105570816_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=BcFo-UP7IqcAX_mgS68&oh=6ecd4c05ea06c3700f27f680fbb11f5d&oe=5EBD98DA",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/70956040_390984834902819_7625913059105570816_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=BcFo-UP7IqcAX_Dmqn2&oh=3cf30c13e3f3002dc57f0970990fcf16&oe=5EC18D5A",
             "label": "Member",
             "name": "Rachel Margarella",
             "desc": "I have two dogs and  I like oreos. "
@@ -354,7 +355,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Lauren Mellon",
             "desc": "gmhs '22"
@@ -416,7 +417,8 @@
         {
             "label": "Member",
             "name": "Hannah Rossi",
-            "desc": "Ya girl is currently a prospective (soon-to-be-expert, I promise) programmer. While she may not be 100% fluent in any of the languages, she is fluent in French. *mic drop*"
+            "desc": "Ya girl is currently a prospective (soon-to-be-expert, I promise) programmer. While she may not be 100% fluent in any of the languages, she is fluent in French. *mic drop*",
+            "imagepath": "/assets/images/pfp/Hannah_Rossi.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -451,7 +453,8 @@
         {
             "label": "Member",
             "name": "Heran Teddy",
-            "desc": "Class of 2022 at gmhs :)"
+            "desc": "Class of 2022 at gmhs :)",
+            "imagepath": "/assets/images/pfp/hamster.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -510,7 +513,8 @@
         {
             "label": "Member",
             "name": "Matthew Lin",
-            "desc": "Uh Oh."
+            "desc": "Uh Oh.",
+            "imagepath": "/assets/images/pfp/hamster.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
