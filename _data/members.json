@@ -13,7 +13,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/76938864_2563035387249308_1144268116168015872_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=u6pBQsEN9nwAX_vjvBu&oh=ff0dfcf2cefb8cd45ff5d61ba39efd55&oe=5EC011E8",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Danny Oppenheimer",
             "desc": "Freshmen boi who worked on the APC website and is basically hackerman himself."
@@ -121,7 +121,7 @@
             "desc": "Member of the advanced program club. Programming and Physics are my forté"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92028572_2363068673992878_5958965625085755392_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=EvL-3mMhGQIAX9Xynbr&oh=fa977beed82957e4488179edca5985e8&oe=5EC085B3",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Rachel Danckaert",
             "desc": "Hello, I’m a senior at GMHS. I am going to be attending Virginia Tech next year, so this will unfortunately my only year in this club. I hope to achieve great things with my prior knowledge of programming."
@@ -139,10 +139,10 @@
             "desc": "Description"
         },
         {
-            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "imagepath": "/assets/images/pfp/hamster.jpg",
             "label": "Member",
             "name": "Joseph Donovan",
-            "desc": "Description"
+            "desc": "(null)"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -157,7 +157,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=PZkbFM-S0h8AX-61gbw&oh=b58466870e0dd28e9568b4a673357697&oe=5EC0C645",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=PZkbFM-S0h8AX-vcNCX&oh=b6ce182e2e28c4671a4c951acb4e727e&oe=5EC0C645",
             "label": "Member",
             "name": "Wynona Finein",
             "desc": "sup don't know why im here but i'm here so might as well have fun with it "
@@ -211,7 +211,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=ScCpiqBnfQcAX873r8L&oh=6a0023e7a0982c2b535ffbf00f2fa1ad&oe=5EC0B2E5",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=tzS4S3UzqssAX98ggEx&oh=a4cddf98ae9e169a5b9f9502c0586a7c&oe=5EC0B2E5",
             "label": "Member",
             "name": "Ryan Green",
             "desc": "Freshman who is very bad at coding and gets carried through computer problems by his friends who are massive nerds"
@@ -265,10 +265,10 @@
             "desc": "Description"
         },
         {
-            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92553751_535000170494684_6177518106844332032_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=NQQOc1WzBzMAX_fy_EN&oh=5911e20596b4e3e77d76e405a56991e1&oe=5EC21FB5",
             "label": "Member",
             "name": "Kristen Hornbuckle",
-            "desc": "Description"
+            "desc": "I don't know anything about APC but here I am ready to learn new things during isolation because why not"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -394,7 +394,7 @@
             "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Rebecca Rasmussen",
-            "desc": "Description"
+            "desc": "here solely to become a better coder than rohan"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -550,6 +550,24 @@
             "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Ethan Daniel Siebel",
+            "desc": "Description"
+        },
+        {
+            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "label": "Member",
+            "name": "Chloe Reithinger",
+            "desc": "Description"
+        },
+        {
+            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "label": "Member",
+            "name": "Jocelyn Ripley",
+            "desc": "Description"
+        },
+        {
+            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "label": "Member",
+            "name": "Cole Tarter",
             "desc": "Description"
         }
     ]
