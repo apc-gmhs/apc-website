@@ -33,7 +33,9 @@ async function fill() {
 		}
 	}
 }
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 async function find(username, name) {
 	let pic_url;
 	if(username == '[USE_HARDCOPY]')
@@ -46,6 +48,7 @@ async function find(username, name) {
 	}
 	else
 	{
+		await sleep(1000);
 		await fetch('https://www.instadp.com/fullsize/' + username)
 		.then((res) => res.text())
 		.then((body) => {
