@@ -13,7 +13,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/76938864_2563035387249308_1144268116168015872_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=VJGY9mrFoe4AX8O8cs5&oh=07f5aa47a250c733b523217d5016584b&oe=5EC40668",
             "label": "Member",
             "name": "Danny Oppenheimer",
             "desc": "Freshmen boi who worked on the APC website and is basically hackerman himself."
@@ -121,7 +121,7 @@
             "desc": "Member of the advanced program club. Programming and Physics are my forté"
         },
         {
-            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92028572_2363068673992878_5958965625085755392_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=EvL-3mMhGQIAX9Xynbr&oh=fa977beed82957e4488179edca5985e8&oe=5EC085B3",
             "label": "Member",
             "name": "Rachel Danckaert",
             "desc": "Hello, I’m a senior at GMHS. I am going to be attending Virginia Tech next year, so this will unfortunately my only year in this club. I hope to achieve great things with my prior knowledge of programming."
@@ -157,7 +157,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=PZkbFM-S0h8AX-vcNCX&oh=b6ce182e2e28c4671a4c951acb4e727e&oe=5EC0C645",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92262440_234876671218240_2462689940643774464_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=deqK2YNdK8gAX_hQ08q&oh=4e9f899bb1749b8da4cbbc65ed56c9b9&oe=5EC0C645",
             "label": "Member",
             "name": "Wynona Finein",
             "desc": "sup don't know why im here but i'm here so might as well have fun with it "
@@ -211,7 +211,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=tzS4S3UzqssAX98ggEx&oh=a4cddf98ae9e169a5b9f9502c0586a7c&oe=5EC0B2E5",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=tzS4S3UzqssAX9XtyqF&oh=1fa1c6e19d77865e4f86a5e4d0a50230&oe=5EC0B2E5",
             "label": "Member",
             "name": "Ryan Green",
             "desc": "Freshman who is very bad at coding and gets carried through computer problems by his friends who are massive nerds"
@@ -265,7 +265,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92553751_535000170494684_6177518106844332032_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=NQQOc1WzBzMAX_fy_EN&oh=5911e20596b4e3e77d76e405a56991e1&oe=5EC21FB5",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92553751_535000170494684_6177518106844332032_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=NQQOc1WzBzMAX_mJZm2&oh=01a59c50f2898d6a98b193d6b45dd123&oe=5EC21FB5",
             "label": "Member",
             "name": "Kristen Hornbuckle",
             "desc": "I don't know anything about APC but here I am ready to learn new things during isolation because why not"
@@ -343,7 +343,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/70956040_390984834902819_7625913059105570816_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=BcFo-UP7IqcAX_Dmqn2&oh=3cf30c13e3f3002dc57f0970990fcf16&oe=5EC18D5A",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/70956040_390984834902819_7625913059105570816_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=tiLgLQAxD3kAX_1RV_o&oh=e19196ad2b0726ce331845125c7cc8d2&oe=5EC18D5A",
             "label": "Member",
             "name": "Rachel Margarella",
             "desc": "I have two dogs and  I like oreos. "
@@ -568,6 +568,12 @@
             "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Cole Tarter",
+            "desc": "Description"
+        },
+        {
+            "imagepath": "/assets/images/pfp/default_pfp.png",
+            "label": "Member",
+            "name": "Graham Gaskins",
             "desc": "Description"
         }
     ]
