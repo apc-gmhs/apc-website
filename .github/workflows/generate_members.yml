@@ -24,6 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r _automation_scripts/requirements.txt
         npm install
+    - name: Wipe Members Data
+      shell: bash
+      run: 'node _automation_scripts/jsonwipe.js'
     - name: Download Schoology Group Members
       shell: bash
       run: 'python _automation_scripts/get_members.py'
