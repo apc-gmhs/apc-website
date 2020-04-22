@@ -1,4 +1,7 @@
-var fs = require("fs");
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
 
 var keepUsers = [
   "Ella Reithinger",
