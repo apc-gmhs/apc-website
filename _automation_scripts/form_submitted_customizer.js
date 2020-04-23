@@ -49,20 +49,17 @@ async function find(username, name) {
     pic_url = "/assets/images/pfp/hamster.jpg";
   } else {
     await sleep(1000);
-    await fetch("https://www.instadp.com/fullsize/" + username)
+    await fetch(`https://www.instagram.com/${username.toLowerCase()}/?__a=1`)
       .then((res) => res.text())
       .then((body) => {
-        if (body.includes('<img class="picture" src="')) {
-          // remove everything after the html tag for the pfp
-          // only keep everything before the closing quote
-          // REGEX will look for anything inbetween class="picture" src=" and "> to find string
-          //                    everything in between here   ⌄
-          pic_url = body.match(/(?<=class\="picture" src\=").*?(?=">)/gm)[0];
-        }
+        let json = JSON.parse(body);
+        pic_url = json.graphql.user.profile_pic_url_hd;
       });
   }
 
   return pic_url;
 }
 
-
+fill().then(() => {
+  fs.writeFileSync(members_file, JSON.stringify(members, null, 4));
+});
