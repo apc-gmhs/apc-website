@@ -11,3 +11,6 @@ Registry Server URL: https://rdap.verisign.com/com/v1/domain/apc-gm.com
 Registrar Server URL: https://namerdap.systems/domain/APC-GM.COM
 
 Also a note on commit history - a lot of the work was done by multiple individuals in VSCode live share sessions - their work in not reflected in graphs or commits. 
+
+
+![Generate Members](https://github.com/apc-gmhs/apc-website/workflows/Generate%20Members/badge.svg?branch=master)
