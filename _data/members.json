@@ -19,7 +19,7 @@
             "desc": "Freshmen boi who worked on the APC website and is basically hackerman himself."
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Early Supporter",
             "name": "Sam Klemic",
             "desc": "Sam"
@@ -115,13 +115,13 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Joseph Dakin",
             "desc": "Member of the advanced program club. Programming and Physics are my forté"
         },
         {
-            "imagepath": "",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/92028572_2363068673992878_5958965625085755392_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=EvL-3mMhGQIAX-zg0o6&oh=11685704bbe4446e4ee831237d72372e&oe=5EC085B3",
             "label": "Member",
             "name": "Rachel Danckaert",
             "desc": "Hello, I’m a senior at GMHS. I am going to be attending Virginia Tech next year, so this will unfortunately my only year in this club. I hope to achieve great things with my prior knowledge of programming."
@@ -211,7 +211,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/64821271_1377062725777714_3474360128482836480_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=ScCpiqBnfQcAX9d_-wm&oh=a0bb89c3941d018dac3db40799fecf93&oe=5EC0B2E5",
             "label": "Member",
             "name": "Ryan Green",
             "desc": "Freshman who is very bad at coding and gets carried through computer problems by his friends who are massive nerds"
@@ -255,7 +255,8 @@
         {
             "label": "Contributer",
             "name": "Evan Hom",
-            "desc": "Hi. My name is Evan and I love to play football and basketball. I also really like to make stuff and program."
+            "desc": "Hi. My name is Evan and I love to play football and basketball. I also really like to make stuff and program.",
+            "imagepath": "/assets/images/pfp/Evan_Hom.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -354,7 +355,7 @@
             "desc": "Description"
         },
         {
-            "imagepath": "",
+            "imagepath": "/assets/images/pfp/default_pfp.png",
             "label": "Member",
             "name": "Lauren Mellon",
             "desc": "gmhs '22"
@@ -416,7 +417,8 @@
         {
             "label": "Member",
             "name": "Hannah Rossi",
-            "desc": "Ya girl is currently a prospective (soon-to-be-expert, I promise) programmer. While she may not be 100% fluent in any of the languages, she is fluent in French. *mic drop*"
+            "desc": "Ya girl is currently a prospective (soon-to-be-expert, I promise) programmer. While she may not be 100% fluent in any of the languages, she is fluent in French. *mic drop*",
+            "imagepath": "/assets/images/pfp/Hannah_Rossi.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -451,7 +453,8 @@
         {
             "label": "Member",
             "name": "Heran Teddy",
-            "desc": "Class of 2022 at gmhs :)"
+            "desc": "Class of 2022 at gmhs :)",
+            "imagepath": "/assets/images/pfp/hamster.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
@@ -510,7 +513,8 @@
         {
             "label": "Member",
             "name": "Matthew Lin",
-            "desc": "Uh Oh."
+            "desc": "Uh Oh.",
+            "imagepath": "/assets/images/pfp/hamster.jpg"
         },
         {
             "imagepath": "/assets/images/pfp/default_pfp.png",
