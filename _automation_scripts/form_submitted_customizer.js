@@ -12,7 +12,6 @@ let members = require(members_file);
 
 async function fill() {
   const doc = new GoogleSpreadsheet(process.env.MEMBERS_SPREADSHEET_KEY);
-	const doc = new GoogleSpreadsheet('1vKzBWgMmJelUf7nCLCsYhi_CbjRdeO3mBagff0onf08');
 	await promisify(doc.useServiceAccountAuth)(creds);
 	const info = await promisify(doc.getInfo)();
 	const sheet = info.worksheets[0];
