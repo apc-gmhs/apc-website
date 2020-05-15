@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: -100;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 20px;
 }
 
