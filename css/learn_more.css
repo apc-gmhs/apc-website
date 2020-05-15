@@ -8,6 +8,12 @@
     padding-top: 20px;
 }
 
+.split > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .left {
     left: 0;
     background-color: #add8e6;
@@ -39,6 +45,7 @@
 }
 
 .centered {
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
