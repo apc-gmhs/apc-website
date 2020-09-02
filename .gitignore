@@ -7,4 +7,4 @@ vendor
 node_modules
 _automation_scripts/keys.yml
 _automation_scripts/google_secret.json
-*.DS_Store
+.DS_Store
