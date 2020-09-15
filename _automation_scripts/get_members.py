@@ -50,22 +50,26 @@ def get_paged_data(
     return data
 
 with open(members_file_path) as file:
-    old_members = json.load(file)['members']
+    old_members = json.load(file)
 
 members = get_paged_data(schoology_req, 'https://api.schoology.com/v1/groups/2428165656/enrollments', 'enrollment')
-json_data = {
-    'members': old_members
-}
-old_member_names = [member['name'] for member in old_members]
+json_data = old_members
+old_member_names = [(member['first_name'], member['last_name']) for member in old_members]
 for member in members:
-    if member['name_display'] in old_member_names or member['admin'] == 1:
+    if (member['name_first'], member['name_last']) in old_member_names or member['admin'] == 1:
+        for old_member in json_data:
+            if (old_member['first_name'], old_member['last_name']) == (member['name_first'], member['name_last']) and old_member.get('picture', None) is None:
+                old_member['picture'] = member['picture_url']
         continue
 
-    json_data['members'].append({
+    json_data.append({
         'imagepath': '/assets/images/pfp/default_pfp.png',
         'label': 'Member',
-        'name': f"{member['name_display']}",
-        'desc': 'Description'
+        'display_name': member['name_display'],
+        'first_name': member['name_first'],
+        'last_name': member['name_last'],
+        'desc': 'Description',
+        'picture': member['picture_url']
     })
 
 with open(members_file_path, 'w') as file:
