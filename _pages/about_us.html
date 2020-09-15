@@ -34,11 +34,17 @@ stylesheets:
 	
 	<script src="/scripts/about_us.js" defer></script>
 	<div class="card-grid">
-		{% for card in site.data.members.members %}
+		{% for card in site.data.members %}
 		<div>
-			<img src="{{ card.imagepath }}" />
+			<div class="image-wrapper">
+				{% if card.imagepath == "/assets/images/pfp/default_pfp.png" %}
+					<img src="{{ card.picture }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
+				{% else %}
+					<img src="{{ card.imagepath }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
+				{% endif %}
+			</div>
 			<p class="label">{{ card.label }}</p>
-			<h5>{{ card.name }}</h5>
+			<h5>{{ card.display_name }}</h5>
 			<p>{{ card.desc }}</p>
 		</div>
 		{% endfor %}

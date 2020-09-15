@@ -1,101 +1,106 @@
 body {
-	background-color: rgb(80, 80, 80);
+    background-color: rgb(80, 80, 80);
 }
 
 main > div {
-	text-align: center;
-	
+    text-align: center;
+    
 }
 
-main div div:not(#button-wrapper) {
-	width: 3in;
-	display: inline-block;
-	vertical-align: top;
-	margin: 10px;
-	text-align: left;
+main div > div:not(#button-wrapper):not(.image-wrapper) {
+    width: 3in;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    text-align: left;
 }
 
 main div:empty {
-	height: 0;
+    height: 0;
 }
 
 main img {
-	width: 100%;
-	background: #333;
+    width: 100%;
+    background: #333;
 }
 
 h1 {
-	text-align: center;
-	color: white;
+    text-align: center;
+    color: white;
 }
 
 h4 {
-	margin-top: 15px;
-	font-size: 50px;
-	text-align: center;
-	margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 h5 {
-	margin: 0;
+    margin: 0;
 }
 
 footer h5 {
-	margin: auto;
-	margin-top: 30px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 p.label {
-	color: #ffffff;
-	background-color: green;
-	font-size: 15px;
-	margin-top: -5px;
-	padding: 10px 0px;
-	text-align: center;
+    color: #ffffff;
+    background-color: green;
+    font-size: 15px;
+    margin-top: -5px;
+    padding: 10px 0px;
+    text-align: center;
 }
 
 #button-wrapper {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 
 #exec-board {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .card-grid > div {
-	background-color: white;
-	transition: transform 0.25s ease, box-shadow 0.25s ease;
-	will-change: transform;
-	min-height: 440px;
-	border: black;
-	border-radius: 3px;
-	border-style: solid;
+    background-color: white;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+    min-height: 440px;
+    border: black;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+.card-grid > div > .image-wrapper {
+    height: 288px;
+    overflow: hidden;
 }
 
 .card-grid > div:not(.card-elevated):hover {
-	transform: translateY(-15px);
-	box-shadow: -8px 8px 16px 4px rgba(0, 150, 0, 0.35);
+    transform: translateY(-15px);
+    box-shadow: -8px 8px 16px 4px rgba(0, 150, 0, 0.35);
 }
 
 .card-grid > div p:last-of-type {
-	padding: 0px 7px;
+    padding: 0px 7px;
 }
 
 .card-grid > div h5 {
-	margin-top: 5px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.2rem;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .card-elevated {
-	transform: translateY(-23px);
-	box-shadow: -8px 8px 16px 4px rgba(0, 150, 0, 0.35);
+    transform: translateY(-23px);
+    box-shadow: -8px 8px 16px 4px rgba(0, 150, 0, 0.35);
 }
 
 @media (max-width: 390px) {
-	main {
-		padding: 5px;
-	}
+    main {
+        padding: 5px;
+    }
 }
