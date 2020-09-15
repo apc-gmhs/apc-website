@@ -8,46 +8,52 @@ stylesheets:
 ---
 
 <main>
-	<h1>Our Members</h1>
-	<div id="exec-board" class="card-grid">
-		<div>
-			<img src="/assets/images/pfp/jonathanoppenheimer.jpg" />
-			<p class="label">Head Curriculum Coordinator/Co-Founder</p>
-			<h5>Jonathan Oppenheimer</h5>
-			<p>Jonathan is the curriculum coordinator he knows his stuff</p>
-		</div>
-		<div class="card-elevated">
-      <img src="/assets/images/pfp/rohansuri.jpg" />
-			<p class="label">President/Founder</p>
-			<h5>Rohan Suri</h5>
-			<p>founder, president, etc... of the apc. </p>
-		</div>
+    <h1>Our Members</h1>
+    <div id="exec-board" class="card-grid">
+        <div>
+            <div class="image-wrapper">
+                <img src="/assets/images/pfp/jonathanoppenheimer.jpg">
+            </div>
+            <p class="label">Head Curriculum Coordinator/Co-Founder</p>
+            <h5>Jonathan Oppenheimer</h5>
+            <p>Jonathan is the curriculum coordinator he knows his stuff</p>
+        </div>
+        <div class="card-elevated">
+            <div class="image-wrapper">
+                <img src="/assets/images/pfp/rohansuri.jpg" />
+            </div>
+            <p class="label">President/Founder</p>
+            <h5>Rohan Suri</h5>
+            <p>founder, president, etc... of the apc. </p>
+        </div>
 
-		<div>
-			<img src="/assets/images/pfp/default_pfp.png" />
-			<p class="label">Vice President/Co-Founder</p>
-			<h5>Andrew Lester</h5>
-			<p>vice president, fellow programmer</p>
-		</div>
-	</div>
+        <div>
+            <div class="image-wrapper">
+                <img src="/assets/images/pfp/default_pfp.png" />
+            </div>
+            <p class="label">Vice President/Co-Founder</p>
+            <h5>Andrew Lester</h5>
+            <p>vice president, fellow programmer</p>
+        </div>
+    </div>
 
-	
-	<script src="/scripts/about_us.js" defer></script>
-	<div class="card-grid">
-		{% for card in site.data.members %}
-		<div>
-			<div class="image-wrapper">
-				{% if card.imagepath == "/assets/images/pfp/default_pfp.png" %}
-					<img src="{{ card.picture }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
-				{% else %}
-					<img src="{{ card.imagepath }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
-				{% endif %}
-			</div>
-			<p class="label">{{ card.label }}</p>
-			<h5>{{ card.display_name }}</h5>
-			<p>{{ card.desc }}</p>
-		</div>
-		{% endfor %}
-	</div>
-	<br />
+    
+    <script src="/scripts/about_us.js" defer></script>
+    <div class="card-grid">
+        {% for card in site.data.members %}
+        <div>
+            <div class="image-wrapper">
+                {% if card.imagepath == "/assets/images/pfp/default_pfp.png" %}
+                    <img src="{{ card.picture }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
+                {% else %}
+                    <img src="{{ card.imagepath }}" onerror="javascript:this.src='/assets/images/pfp/default_pfp.png'">
+                {% endif %}
+            </div>
+            <p class="label">{{ card.label }}</p>
+            <h5>{{ card.display_name }}</h5>
+            <p>{{ card.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <br />
 </main>
