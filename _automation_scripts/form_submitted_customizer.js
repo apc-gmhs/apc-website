@@ -49,8 +49,12 @@ async function find(username, name) {
 		await fetch(`https://www.instagram.com/web/search/topsearch/?context=user&count=10&query=${username.toLowerCase()}`)
 			.then((res) => res.text())
 			.then((body) => {
-				let json = JSON.parse(body);
-				pic_url =  json.users[0].user.profile_pic_url;
+                                try {
+				    let json = JSON.parse(body);
+				    pic_url =  json.users[0].user.profile_pic_url;
+                                } catch (e) {
+                                    pic_url = '/assets/images/pfp/default_pfp.png';
+                                }
 		});
 	}
 	return pic_url;
