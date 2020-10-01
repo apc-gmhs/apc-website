@@ -1,0 +1,135 @@
+---
+layout: default
+title: Resource Compendium
+description: A page to hold the Resource Compendium
+permalink: /resourceCompendium
+stylesheets:
+  - resourceCompendium
+  - jquery.booklet.1.1.0
+scripts:
+  - resourceCompendium
+  - jquery.easing.1.3
+  - jquery.booklet.1.1.0.min
+---
+
+<main>
+  <!-- can't delete this despite copying over to  and css file
+      someone pls fix 
+      if you dont import them right like this it dont work
+      -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+  ></script>
+  <script
+    src="scripts/jquery.booklet.1.1.0.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+  <br />
+  <br />
+  <br />
+  <div class="book_wrapper">
+    <a id="next_page_button"></a>
+    <a id="prev_page_button"></a>
+
+    <div id="mybook" style="display: none">
+      <div class="b-load">
+        <div>
+          <h1>COMPENDIUM ENTRY #1</h1>
+          <p>
+            Hey there guys, its your main man Mr. Andrew Lester and I'm excited to bring you the first edition of APC's nationally syndicated <strong>RESOURCE COMPENDIUM</strong>  (make bold). Today we've put together a few articles about what this wacky thing we call """computer science""" actually is, what coding means and a fun little test about how you've interacted with FCCPS' information technology. This compendium entry is on schoology, but future ones will be on the official APC Website.
+            Reminder our first meeting is next Friday (9/25/20) at 11am. If you don't show up I will be incredibly disappointed, and perhaps even saddened.
+            <br>
+            <br>
+            Andrew
+            <br>
+            <br>
+          <ol class="linkItem">
+            <li> <a href="https://twitter.com/kanyewest/status/1043496926144913410?s=19" target="_blank">Kanye Fun Fact #1</a>:  Kanye used to code video games in middle school! If he can do it, so can you! Stay tuned for future kanye fun facts in our entries, this is a teaser.</li>
+            <li> <a href="https://code.org/files/computer_science_is_foundational.pdf" target="_blank">Computer Science Hype from code.org</a></li>
+            <li> <a href="https://www.goodcore.co.uk/blog/what-is-coding/" target="_blank">What is Coding Blog Post</a></li>
+            <li> <a href="https://acceptableusepuritytest.com/" target="_blank">Test your FCCPS Electronic Handbook Compliance</a>: Post your scores on the quiz in the comments on this post!</li>
+          </ol>  
+        </div>
+        <div>
+          <img src="/assets/images/contentImages/2.jpg" alt="" />
+          <h1>Animated Portfolio Gallery</h1>
+          <p>
+            Today we will create an animated portfolio gallery with jQuery. The
+            gallery will contain a scroller for thumbnails and a content area
+            where we will display details about the portfolio item. The image
+            can be enlarged by clicking on it, making it appear as an overlay.
+          </p>
+          <a href="" target="_blank" class="article">ARTICLE</a>
+          <a href="" class="demo">DEMO</a>
+        </div>
+        <div>
+          <img src="/assets/images/contentImages/3.jpg" alt="" />
+          <h1>Annotation Overlay Effect</h1>
+          <p>
+            Today we will create a simple overlay effect to display annotations
+            in e.g. portfolio items of a web designers portfolio. We got the
+            idea from the wonderful portfolio of www.rareview.com where Flash is
+            used to create the effect. We will use jQuery.
+          </p>
+          <a href="" target="_blank" class="article">ARTICLE</a>
+          <a href="" class="demo">DEMO</a>
+        </div>
+        <div>
+          <img src="/assets/images/contentImages/4.jpg" alt="" />
+          <h1>Bubbleriffic Image Gallery</h1>
+          <p>
+            In this tutorial we will create a bubbly image gallery that shows
+            your images in a unique way. The idea is to show the thumbnails of
+            albums in a rounded fashion allowing the user to scroll them
+            automatically by moving the mouse. Clicking on a thumbnail will zoom
+            in a big circle and the full image which will be automatically
+            resized to fit into the screen.
+          </p>
+          <a href="" target="_blank" class="article">ARTICLE</a>
+          <a href="" class="demo">DEMO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- can't delete this despite copying over to scripts file-->
+  <script type="text/javascript">
+    $(function () {
+      var $mybook = $("#mybook");
+      var $bttn_next = $("#next_page_button");
+      var $bttn_prev = $("#prev_page_button");
+      var $loading = $("#loading");
+      var $mybook_images = $mybook.find("img");
+      var cnt_images = $mybook_images.length;
+      var loaded = 0;
+
+      $mybook_images.each(function () {
+        var $img = $(this);
+        var source = $img.attr("src");
+        $("<img/>")
+          .load(function () {
+            ++loaded;
+            if (loaded == cnt_images) {
+              $loading.hide();
+              $bttn_next.show();
+              $bttn_prev.show();
+              $mybook.show().booklet({
+                name: null, //
+                width: 800, //
+                height: 500, //
+                speed: 600, //
+                direction: "LTR", //
+                //
+                next: $bttn_next, //
+                prev: $bttn_prev, //
+              });
+              Cufon.refresh();
+            }
+          })
+          .attr("src", source);
+      });
+    });
+  </script>
+</main>
