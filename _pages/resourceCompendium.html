@@ -7,25 +7,13 @@ stylesheets:
   - resourceCompendium
   - jquery.booklet.1.1.0
 scripts:
+  - jquery.min
   - resourceCompendium
   - jquery.easing.1.3
   - jquery.booklet.1.1.0.min
 ---
 
 <main>
-  <!-- can't delete this despite copying over to  and css file
-      someone pls fix 
-      if you dont import them right like this it dont work
-      -->
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"
-  ></script>
-  <script
-    src="scripts/jquery.booklet.1.1.0.min.js"
-    type="text/javascript"
-  ></script>
-  <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
   <br />
   <br />
   <div class="book_wrapper">
@@ -226,43 +214,4 @@ scripts:
       </div>
     </div>
   </div>
-
-  <!-- can't delete this despite copying over to scripts file-->
-  <script type="text/javascript">
-    $(function () {
-      var $mybook = $("#mybook");
-      var $bttn_next = $("#next_page_button");
-      var $bttn_prev = $("#prev_page_button");
-      var $loading = $("#loading");
-      var $mybook_images = $mybook.find("img");
-      var cnt_images = $mybook_images.length;
-      var loaded = 0;
-
-      $mybook_images.each(function () {
-        var $img = $(this);
-        var source = $img.attr("src");
-        $("<img/>")
-          .load(function () {
-            ++loaded;
-            if (loaded == cnt_images) {
-              $loading.hide();
-              $bttn_next.show();
-              $bttn_prev.show();
-              $mybook.show().booklet({
-                name: null, //
-                width: 800, //
-                height: 500, //
-                speed: 600, //
-                direction: "LTR", //
-                //
-                next: $bttn_next, //
-                prev: $bttn_prev, //
-              });
-              Cufon.refresh();
-            }
-          })
-          .attr("src", source);
-      });
-    });
-  </script>
 </main>
