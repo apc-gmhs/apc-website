@@ -17,6 +17,8 @@ scripts:
                 {{ entry.content | markdownify }}
             </div>
         {% endfor %}
+        <!-- Hidden last entry to fix right margin on flexbox -->
+        <div id="entry-0000-00-00" class="entry" style="height: 100%; opacity: 0; pointer-events: none; min-width: 70px; padding: 0px;"></div>
         <button id="next-button">&rarr;</button>
     </div>
 </main>

@@ -32,7 +32,7 @@ prevButton.addEventListener('click', function() {
 let observerOptions = {
     root: entryViewer,
     rootMargin: '0px',
-    threshold: [0, 0.15, 0.9]
+    threshold: [0, 0.15, 1]
 }
 
 let observer = new IntersectionObserver(function(observerEntries, _) {
@@ -55,4 +55,5 @@ let observer = new IntersectionObserver(function(observerEntries, _) {
 }, observerOptions);
 
 observer.observe(entries[0]);
-observer.observe(entries[entries.length - 1]);
+// Subtract 2 to account for unusable last entry
+observer.observe(entries[entries.length - 2]);
