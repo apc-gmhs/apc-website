@@ -1,0 +1,18 @@
+---
+layout: default
+title: Resource Compendium
+description: A page to view and acess the Resource Compendium and all its additions
+permalink: /compendium
+stylesheets:
+- compendium
+scripts:
+- compendium
+---
+<main>
+    {% for entry in site.compendium_entries %}
+        <div class="entry">
+            <h1 class="entry-title">{{ entry.title }} - {{ entry.date | date_to_long_string: "ordinal"}}</h1>
+            <p class="entry-content">{{ entry.content | markdownify }}</p>  
+        </div>
+    {% endfor %}
+</main>
