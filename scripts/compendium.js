@@ -6,8 +6,6 @@ const nextButton = document.getElementById('next-button');
 // 60vw + 35 for margin between entries
 const ENTRY_SCROLL_FACTOR = (document.documentElement.clientWidth * 0.6) + 35;
 
-entries[0].classList.add('visible');
-
 let mostRecentEntry = entries[0];
 
 for (let entry of entries) {
