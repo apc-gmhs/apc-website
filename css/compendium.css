@@ -85,7 +85,7 @@ body {
 .entry-title {
     top: 0;
     position: sticky;
-    color: red;
+    color: #cc0000;
     background: rgb(230, 230, 230);;
 }
 
