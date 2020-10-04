@@ -68,13 +68,17 @@ body {
     background-color: rgb(230, 230, 230);
     box-shadow: -5px 5px 11px 1px rgba(0, 0, 0, 0.25);
     scroll-snap-align: center;
-    min-width: 80vw;
+    width: 80vw;
     max-height: calc(100vh - 110px);
     font-size: 18px;
-    max-width: 650px;
+    max-width: 1100px;
     padding: 20px 100px;
     margin: 0px 35px;
     overflow-y: auto;
+}
+
+.entry.hidden {
+    scroll-snap-align: none;
 }
 
 .entry:first-of-type {
@@ -97,10 +101,19 @@ body {
 
 @media (max-width: 750px) {
     .entry-viewer > button {
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        z-index: 5;
+        top: 75%;
+    }
+    .entry {
+        min-width: 100vw;
+        max-width: 100vw;
+        width: 100vw;
+        padding: 20px 5px;
+    }
+    #previous-button {
+        left: 10vw;
+    }
+    #next-button {
+        right: 10vw;
+        transform: translate(50%, 50%);
     }
 }
