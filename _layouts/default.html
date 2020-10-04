@@ -4,5 +4,10 @@
 
 	<body>
 		{% include header.html %} {{ content }} {% include footer.html %}
+		{% if page.scripts %}
+			{% for script in page.scripts %}
+				<script src="{{ site.baseurl }}/scripts/{{ script }}.js"></script>
+			{% endfor %}
+		{% endif %}
 	</body>
 </html>

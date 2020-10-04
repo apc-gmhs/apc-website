@@ -1,23 +1,105 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  background: rgb(80, 80, 80);
-  color: #444;
-  font-size: 12px;
-  color: #333;
-  font-family: "Oswald", sans-serif;
+    background: rgb(80, 80, 80);
+    color: #444;
+    font-size: 12px;
+    color: #333;
+    font-family: "Oswald", sans-serif;
+    overflow: visible;
+}
+
+.entry-viewer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
+    overflow-x: scroll;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-type: x mandatory;
+}
+
+.entry-viewer > button {
+    position: fixed;
+    top: 50%;
+    z-index: 5;
+    opacity: 1;
+    background-color: white;
+    transform: translate(-50%, 50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+    transition: opacity 150ms ease-in;
+}
+
+.entry-viewer > button.disabled {
+    opacity: 0;
+}
+
+
+#previous-button {
+    /* 10vw minus 10 - margin in between entries */
+    left: calc(10vw - 35px);
+}
+
+#next-button {
+    /* 10vw plus 10 - the button width + margin */
+    right: calc(10vw - 85px);
 }
 
 .entry {
-  
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+    box-shadow: -5px 5px 11px 1px rgba(0, 0, 0, 0.25);
+    scroll-snap-align: center;
+    min-width: 80vw;
+    max-height: calc(100vh - 110px);
+    font-size: 18px;
+    max-width: 650px;
+    padding: 20px 100px;
+    margin: 0px 35px;
 }
+
+.entry:first-of-type {
+    margin-left: calc(35px * 4);
+}
+
+.entry:last-of-type {
+    margin-right: calc(35px * 4);
+}
+
+.entry.visible {}
 
 .entry-title {
-
+    top: 0;
+    position: sticky;
+    color: red;
+    background: rgb(230, 230, 230);;
 }
 
-.entry-content {
+.entry-body {
+    max-height: 100%;
+    overflow-y: scroll;
+}
 
+@media (max-width: 750px) {
+    .entry-viewer > button {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 5;
+    }
 }
