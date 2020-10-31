@@ -37,7 +37,6 @@ let observerOptions = {
 
 let observer = new IntersectionObserver(function(observerEntries, _) {
     for (let entry of observerEntries) {
-        console.log(entry.intersectionRatio);
         if (entry.target == entries[0]) {
             if (entry.intersectionRatio < 0.25) {
                 prevButton.classList.remove('disabled');

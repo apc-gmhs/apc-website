@@ -77,6 +77,10 @@ body {
     overflow-y: auto;
 }
 
+.entry img, .entry iframe {
+    max-width: 100%;
+}
+
 .entry.hidden {
     scroll-snap-align: none;
 }
