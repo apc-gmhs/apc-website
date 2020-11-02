@@ -6,26 +6,24 @@ const nextButton = document.getElementById('next-button');
 // 60vw + 35 for margin between entries
 const ENTRY_SCROLL_FACTOR = (document.documentElement.clientWidth * 0.6) + 35;
 
-let mostRecentEntry = entries[0];
+//checks to see if url specifies an entry
+if(window.location.href[window.location.href.length - 11] === '-'){
+    //goes away from set entry to first entry
+    entries[0].scrollIntoView({behavior: 'auto'});
 
-for (let entry of entries) {
-    if (getEntryDate(entry) > getEntryDate(mostRecentEntry)) {
-        mostRecentEntry = entry;
-    }
-}
-
-mostRecentEntry.scrollIntoView({ behavior: 'smooth' });
-
-function getEntryDate(entryElement) {
-    return Date.parse(entryElement.id.replace('entry-', ''));
+    //scrolls back to set entry
+    let currentEntry = document.getElementById('entry-' + window.location.href.substring(window.location.href.length - 10));
+    currentEntry.scrollIntoView();
+} else{
+    entries[entries.length - 2].scrollIntoView();
 }
 
 nextButton.addEventListener('click', function() {
-    entryViewer.scrollBy({ left: ENTRY_SCROLL_FACTOR, behavior: 'smooth' })
+    entryViewer.scrollBy({ left: ENTRY_SCROLL_FACTOR})
 });
 
 prevButton.addEventListener('click', function() {
-    entryViewer.scrollBy({ left: -ENTRY_SCROLL_FACTOR, behavior: 'smooth' })
+    entryViewer.scrollBy({ left: -ENTRY_SCROLL_FACTOR})
 });
 
 
@@ -53,6 +51,5 @@ let observer = new IntersectionObserver(function(observerEntries, _) {
     }
 }, observerOptions);
 
-observer.observe(entries[0]);
 // Subtract 2 to account for unusable last entry
 observer.observe(entries[entries.length - 2]);
