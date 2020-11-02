@@ -13,6 +13,7 @@ body {
 }
 
 .entry-viewer {
+    scroll-behavior: smooth;
     position: relative;
     display: flex;
     flex-direction: row;

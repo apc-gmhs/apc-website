@@ -6,26 +6,14 @@ const nextButton = document.getElementById('next-button');
 // 60vw + 35 for margin between entries
 const ENTRY_SCROLL_FACTOR = (document.documentElement.clientWidth * 0.6) + 35;
 
-let mostRecentEntry = entries[0];
-
-for (let entry of entries) {
-    if (getEntryDate(entry) > getEntryDate(mostRecentEntry)) {
-        mostRecentEntry = entry;
-    }
-}
-
-mostRecentEntry.scrollIntoView({ behavior: 'smooth' });
-
-function getEntryDate(entryElement) {
-    return Date.parse(entryElement.id.replace('entry-', ''));
-}
+entries[entries.length - 2].scrollIntoView();
 
 nextButton.addEventListener('click', function() {
-    entryViewer.scrollBy({ left: ENTRY_SCROLL_FACTOR, behavior: 'smooth' })
+    entryViewer.scrollBy({ left: ENTRY_SCROLL_FACTOR})
 });
 
 prevButton.addEventListener('click', function() {
-    entryViewer.scrollBy({ left: -ENTRY_SCROLL_FACTOR, behavior: 'smooth' })
+    entryViewer.scrollBy({ left: -ENTRY_SCROLL_FACTOR})
 });
 
 
@@ -53,6 +41,7 @@ let observer = new IntersectionObserver(function(observerEntries, _) {
     }
 }, observerOptions);
 
+//takes correct arrow buttons away from first and last entry
 observer.observe(entries[0]);
 // Subtract 2 to account for unusable last entry
 observer.observe(entries[entries.length - 2]);
